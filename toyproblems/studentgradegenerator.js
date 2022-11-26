@@ -1,5 +1,5 @@
-//This is a calculator that outputs the grade of a student according to the percentage
-const maximumGrade = 100;
+//This is a calculator that outputs the grade of a student according to the total grade achievable
+const maximumGrade = 100;//The maximum grade achievable is 100
 function gradeCalculator(){
     //Input the grade
     let grade = 0;
