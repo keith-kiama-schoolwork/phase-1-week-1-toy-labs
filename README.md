@@ -37,7 +37,7 @@ To install this repository, clone the repository onto your local machine's desir
 When inside your terminal,navigate to where you cloned the repository and while inside the repository open it.
 ```bash
   1. cd phase-1-week-1-toy-labs (To navigate inside the cloned repository)
-  2. code . (To open the project in Visual Studio Code)
+  2. code . (To open the project through Visual Studio Code)
 ```
     
 ## Authors
