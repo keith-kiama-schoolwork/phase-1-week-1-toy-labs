@@ -106,7 +106,7 @@ let nssf; //this value is not constant
     console.log(`Your nssf deductions = ${nssf}`);
     
 
-const totalDeductions = payAsYouEarn + nhif + nssf ;// calculates total deductions which comprise of the NSSF,payee and nhif
+const totalDeductions = payAsYouEarn + nhif + nssf ;// calculates total deductions which comprise of the NSSF,payee and NHIF
     console.log(`Your total deductions = ${totalDeductions}`);
 
 const netSalary = grossSalary - totalDeductions; //calculates the net salary
