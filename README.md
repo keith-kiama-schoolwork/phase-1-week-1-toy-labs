@@ -34,7 +34,7 @@ I used the Aren Software Website to get the specific values for calculating Tax 
 
 To install this repository, clone the repository onto your local machine's desired folder.
 
-When inside your terminal,navigate to where you cloned the repository and while inside the repository open it.
+When inside your terminal, navigate to where you cloned the repository and while inside the repository open it.
 ```bash
   1. cd phase-1-week-1-toy-labs (To navigate inside the cloned repository)
   2. code . (To open the project through Visual Studio Code)
