@@ -1,7 +1,7 @@
 
 # Phase-1-Week-1-Toy-Problems-Lab
 
-##This is a personal project that is used to calculate the following probelms:
+## This is a personal project that is used to calculate the following probelms:
 
  Problem 1: Student Grade Generator
 
