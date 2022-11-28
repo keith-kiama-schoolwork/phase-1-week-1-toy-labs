@@ -43,9 +43,3 @@ When inside your terminal, navigate to where you cloned the repository and while
 ## Authors
 
 - [@keithkiama](https://www.github.com/keithkiama)
-
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
