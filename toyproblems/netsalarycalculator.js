@@ -2,9 +2,9 @@
 function kraCalculations(){
 // calculating gross salary by adding the salary, commissions and allowances  
 //the gross salary is recorded early 
-salary = 1000000
-commission = 20000;
-allowances = 2000;
+salary = 0;
+commission = 0;
+allowances = 0;
 const grossSalary = salary + commission + allowances//calculates the gross salary    
     console.log(`Your gross salary = ${grossSalary}`);
 
