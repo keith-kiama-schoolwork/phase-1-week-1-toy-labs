@@ -2,9 +2,9 @@
 function kraCalculations(){
 // calculating gross salary by adding the salary, commissions and allowances  
 //the gross salary is recorded early 
-salary = 0;
-commission = 0;
-allowances = 0;
+salary = 1000000
+commission = 20000;
+allowances = 2000;
 const grossSalary = salary + commission + allowances//calculates the gross salary    
     console.log(`Your gross salary = ${grossSalary}`);
 
@@ -27,40 +27,40 @@ let payAsYouEarn; //this value is not constant
     console.log(`Your payee = ${payAsYouEarn}`);
 
 
-let nhif;//this value is not constant in respect of the gross salary
+let nhifDeduction;//this value is not constant in respect of the gross salary
     if (grossSalary < 6000 && grossSalary > 0) {
-         nhif = 150;
+         nhifDeduction = 150;
     }
     else if(grossSalary >= 6000 && grossSalary <= 7999) {
-         nhif = 300;
+         nhifDeduction = 300;
     }
 
     else if(grossSalary >= 8000 && grossSalary <= 11999) {
-         nhif = 400;
+         nhifDeduction = 400;
     }
 
     else if(grossSalary >= 12000 && grossSalary <= 14999) {
-        nhif = 500;
+        nhifDeduction = 500;
     }
 
     else if(grossSalary >= 15000 && grossSalary <= 19999) {
-        nhif = 600;
+        nhifDeduction = 600;
     }
 
     else if(grossSalary >= 20000 && grossSalary <= 24999) {
-        nhif = 750;
+        nhifDeduction = 750;
     }
 
     else if(grossSalary >= 25000 && grossSalary <= 29999) {
-        nhif = 850;
+        nhifDeduction = 850;
     }
 
     else if(grossSalary >= 30000 && grossSalary <= 34999) {
-         nhif = 900;
+         nhifDeduction = 900;
     }
 
     else if(grossSalary >= 35000 && grossSalary <= 39999) {
-         nhif = 950;
+         nhifDeduction = 950;
     }
 
     else if(grossSalary >= 40000 && grossSalary <= 44999) {
@@ -75,38 +75,38 @@ let nhif;//this value is not constant in respect of the gross salary
          nhif = 1200;
     }
     else if(grossSalary >= 60000 && grossSalary <= 69999) {
-         nhif = 1300;
+         nhifDeduction = 1300;
     }
 
     else if(grossSalary >= 70000 && grossSalary <= 79999) {
-         nhif = 1400;
+         nhifDeduction= 1400;
     }
 
     else if(grossSalary >= 80000 && grossSalary <= 89999) {
-         nhif = 1500;
+         nhifDeduction= 1500;
     }
 
     else if(grossSalary >= 90000 && grossSalary <= 99999) {
-         nhif = 1600;
+         nhifDeduction= 1600;
     }
 
     else if(grossSalary >= 100000) {
-         nhif = 1700;
+         nhifDeduction= 1700;
     }
-    console.log(`Your nhif deduction = ${nhif}`);
+    console.log(`Your nhif deduction = ${nhifDeduction}`);
 
 
 //the maximum value is recorded yearly
-let nssf; //this value is not constant
+let nssfDeduction; //this value is not constant
     nssfPercentage = 0; //this value is not constant in respect of the gross salary
-    nssf = grossSalary * nssfPercentage; 
-    if (nssf > 4800){
-        nssf = 4800;
+    nssfDeduction = grossSalary * nssfPercentage; 
+    if (nssfDeduction > 4800){
+        nssfDeduction = 4800;
     }
-    console.log(`Your nssf deductions = ${nssf}`);
+    console.log(`Your nssf deductions = ${nssfDeduction}`);
     
 
-const totalDeductions = payAsYouEarn + nhif + nssf ;// calculates total deductions which comprise of the NSSF,payee and NHIF
+const totalDeductions = payAsYouEarn + nhifDeduction + nssfDeduction ;// calculates total deductions which comprise of the NSSF,payee and NHIF
     console.log(`Your total deductions = ${totalDeductions}`);
 
 const netSalary = grossSalary - totalDeductions; //calculates the net salary

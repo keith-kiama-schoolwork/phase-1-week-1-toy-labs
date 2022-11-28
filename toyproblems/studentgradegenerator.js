@@ -1,6 +1,6 @@
 //This script calculates the student grade and outputs the grade of a student in respect of the total grade achievable
-const maximumGrade = 100;//The maximum grade achievable is 100
 function gradeCalculator(){
+    const maximumGrade = 100;//The maximum grade achievable is 100
     let grade = 0;//Input the grade of the student
     //calculates the student grade
     const studentGrade = (grade / maximumGrade) * 100

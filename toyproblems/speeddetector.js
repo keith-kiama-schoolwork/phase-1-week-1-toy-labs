@@ -1,6 +1,6 @@
 //This script calculates the speed of a vehicle and gives an output
 function speedCalculator(){
-    const speedLimit = 70;//assigning the speed limit
+    const speedLimit = 70;//assigning the speed limit since it will not change
     let speed = 0;//Input the speed of the vehicle
     if(speed < speedLimit){
         return("Ok")
@@ -13,6 +13,3 @@ function speedCalculator(){
     }
 }
 console.log(speedCalculator())
-
-
-
