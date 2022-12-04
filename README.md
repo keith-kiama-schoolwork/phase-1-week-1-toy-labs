@@ -1,45 +1,91 @@
 
-# Phase-1-Week-1-Toy-Problems-Lab
+#phase-1-code-challenge-flatacuties-080421
 
-## This is a personal project that is used to calculate the following probelms:
+Flatacuties, an app where you can vote for the c utest animal! All while using a local API to build out the frontend for the app.
 
- ### Problem 1: Student Grade Generator
+Project Guidelines
+Your project should conform to the following set of guidelines:
 
-    Write a function that prompts the user to input student marks. The input should be between 0 and 100. The output should correspond the correct grade, as shown below: 
+Core Deliverables:
+As a user, I can:
 
-        A > 79, B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40.
+See a list of all animal names. You will need to make a GET request to the following endpoint to retrieve the character data
+ 
+
+ GET /characters
+
+ Example Response:
+
+   {
+       
+     "id": 1,
+
+     "name": "Mr. Cute",
+
+     "image": "https://thumbs.gfycat.com/EquatorialIckyCat-max-1mb.gif",
+
+     "votes": 0
+
+   },
+
+   {
+
+     "id": 2,
+
+     "name": "Mx. Monkey",
+
+     "image": "https://thumbs.gfycat.com/FatalInnocentAmericanshorthair-max-1mb.gif",
+
+     "votes": 0   }, ….]
+
 
  
 
-### Problem 2: Speed Detector 
+2. Click on an animal’s name to see its details i.e image and number of votes. Note, you should only be displaying the details of one animal at a time. You can either use the character information from your first request, or make a new request to this endpoint to get the character's details.
 
-    Write a program that takes the speed of a car as input e.g 80. If the speed is less than 70, it should print “Ok”. Otherwise, for every 5 km/s above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points.
+ 
 
-    
+GET /characters/:id
 
-### Problem 3: Net Salary Calculator 
+Example Response: 
 
-    Write a program whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. Calculate the payee (i.e. Tax), NHIF Deductions, NSSF Deductions, gross salary, and net salary. 
+{
 
-   
+     "id": 1,
+
+     "name": "Mr. Cute",
+
+     "image": "https://thumbs.gfycat.com/EquatorialIckyCat-max-1mb.gif",
+
+     "votes": 0
+
+   },
 
 
-## Acknowledgements
-I used the Aren Software Website to get the specific values for calculating Tax (i.e Payee),NHIF and NSSF deduction, Net Salary & Gross Slary.
- - [Aren Software](https://www.aren.co.ke/payroll/taxrates.htm)
+ 
 
+3.  When viewing an animal’s details, I should be able to add the number of votes for each animal. This number of votes should then be displayed together with the animal’s details. No persistence is needed for the votes.
+
+
+
+## Authors
+
+- [@keithkiama](https://www.github.com/keithkiama)
 
 
 ## Installation
 
-To install this repository, clone the repository onto your local machine's desired folder.
-
-When inside your terminal, navigate to where you cloned the repository and while inside the repository open it.
+Clone this repository to your local machine and navigate into the code-challenge-flatacuties directory
+.Once inside the direcory run ruby bin/start Keith in order to get access to the code challenge direcory.Once inside the directory you can launch the json server by typing in
 ```bash
-  1. cd phase-1-week-1-toy-labs (To navigate inside the cloned repository)
-  2. code . (To open the project through Visual Studio Code)
+    1. cd phase-1-code-challenge-flatacuties-080421
+    2. cd code-challenge-flatacuties
+    3. cd code-challenge
+    4. json-server --watch db.json(Opens the json server)
+    5. localhost:<port-number>(Opens the index.html file locally)
 ```
     
-## Authors
+## Support
 
-- [@keithkiama](https://www.github.com/keithkiama)
+For support, email keith.maina01@student.moringaschool.com or message me  on slack.
+
